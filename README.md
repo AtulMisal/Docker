@@ -1,8 +1,10 @@
 Docker Overview --
+
   Docker is a contenerization tool. Containers are nothing but a virtual machines in terms of linux which are used to store some data and carry that to others.
   Docker is an company and their product is docker engine but we call it as docker simply.
   
 How docker works --
+
    In our system we have hardware on this the O.S is installed. On this operating system we will install docker engine which will create containers for us.
    
 Why we need docker --
@@ -10,7 +12,7 @@ Why we need docker --
    In organization developer will write the code and it will be tested by tester on server but sometime the code will not work on tester's system coz of some software      unavailability, but using docker this can be removed.
    Before docker we are using hypervisors to create VM's but in this each VM requirs it's own O.S
       Suppose we have a system with 16 GB RAM and 1 TB storage.
-      When we install hypervisor on our system's hardware, while creating VM we have to give some RAM and storage for that VM but if that VM is not in working condition 
+      When we install hypervisor on our system's hardware, while creating VM we have to give some RAM and storage for that VM but if that VM is not in working               condition 
       then also it will take that storage and to avoid this we use docker.
       
   Docker will create containers which use the OS on the system means it will take that much of space that it requires.
