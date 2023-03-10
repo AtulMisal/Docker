@@ -5,7 +5,7 @@ For Container -
 01) docker container ls -a  --> To check stopped container/All container
 02) docker container start/restart containerid  --> Same comand with restart
 03) docker container stop containerid
-04) docker container exec -it containerid  --> To enter into a container
+04) docker container exec -it containerid /bin/bash --> To enter into a container
 05) docker container pause containerid
 06) docker container unpause containerid
 07) docker container run -itd --name= myUbuntu:1.0 ubuntu /bin/bash --> To run a container from an Image
