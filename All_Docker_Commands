@@ -1,1 +1,47 @@
+Docker Commands --
 
+For Container -
+	
+01) docker container ls -a  --> To check stopped container/All container
+02) docker container start/restart containerid  --> Same comand with restart
+03) docker container stop containerid
+04) docker container exec -it containerid  --> To enter into a container
+05) docker container pause containerid
+06) docker container unpause containerid
+07) docker container run -itd --name= myUbuntu:1.0 ubuntu /bin/bash --> To run a container from an Image
+08) docker container run -it --name= myUbuntu:2.0 -v volume id/if you want to attach a bind volume give path as (/etc/bind:/var/www/mysql) ubuntu /bin/bash
+09) docker container run -itd -p 8000:80 --name= myUbuntu:3.0 ubuntu /bin/bash 
+10) docker container inspect containerid
+11) docker container rename containerid New_Name
+12) docker container attach containerid 
+13) docker container kill containerid  --> same as rm but delete forcefully 
+14) docker container rm containerid
+15) docker container prune --> It will delete all unused/stopped containers
+16) docker container wait containerid --> Will wait till the container stops and gives 0 as status message
+17) docker container port containerid/container_Name (That comes by default check through 01 command)
+18) docker container export containerid > new_name.tar
+19) docker image import new_name.tar
+
+Docker Hub 
+1) docker pull image Name
+2) docker image tag your_image_name dockerhubid/new_image_name (which will dispaly in docker hub) --> Tag is requird coz by this only will upload to hub
+3) docker push dockerhubid/new_image_name --> The above commands o/p will create one image and put that in this place
+4) docker image save image_name > new_name.tar  --> It will save the image in tar format if we want in future will not delete this.
+5) docker image load > new_name.tar --> same as export command
+6) docker image build -t give_img_name .
+
+
+
+====================================================================================================================
+
+Why we need Docker Networking --
+
+They share a single operating system and maintain containers in an isolated environment.
+It requires fewer OS instances to run the workload.
+It helps in the fast delivery of software.
+It helps in application portability.
+
+--- We use networking coz we have to connect multiple containers so that the desired o/p will comes
+    Different networks are available in docker (docker network ls ) will show 4 network
+    Default network is bridge
+  
