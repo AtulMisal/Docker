@@ -18,13 +18,21 @@ Why we need docker --
   
   Steps to install docker --
     1. First create one linux server using AWS ec2.  (We will take ubuntu)
+    
     2. Then connect to this server using git bash or putty
+    
     3. Now you are looged as a ec2 user so change it to root by -- sudo -i   (Instead of this you can use sudo in front of all command)
+    
     4. apt update   -- Will update the packages
+    
     5. apt install docker.io    -- Will install docker
+    
     6. docker --version         -- Will show the version of docker engine
+    
     7. service docker status
+    
     8. Now the docker is installed on your system. You can use ready made images from docker hub -- which is a storage of docker images
+    
     9. Basic syntax ---
              docker  _______ ls       -- use image,container,network
   
