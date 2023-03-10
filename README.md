@@ -38,3 +38,14 @@ Why we need docker --
     9. Basic syntax ---
              docker  _______ ls       -- use image,container,network
   
+  
+Q) Why we need Docker Networking --
+
+    They share a single operating system and maintain containers in an isolated environment.
+    It requires fewer OS instances to run the workload.
+    It helps in the fast delivery of software.
+    It helps in application portability.
+
+--- We use networking coz we have to connect multiple containers so that the desired o/p will comes
+    Different networks are available in docker (docker network ls ) will show 4 network
+    Default network is bridge
