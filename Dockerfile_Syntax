@@ -1,0 +1,15 @@
+Dockerfile Syntax --
+
+FROM base image name
+RUN all comands that you want to run if max commands use &&/ then next command
+LABEL name="Atul"
+LABEL address="Pachegaon khurd"
+ENV name=Atul
+ENV address=Pachegaon khurd
+WORKDIR /tmp  --> Will change the directory
+USER 		  --> will change user
+COPY		  --> will copy files
+ADD			  --> will copy files from net and local
+CMD ["sh"]    --> At the end after excuction we will enter into python and on command line python interpretor will open
+EXPOSE        --> Will send traffic to this port
+ENTRYPOINT    --> Will give o/p when container of this image run
