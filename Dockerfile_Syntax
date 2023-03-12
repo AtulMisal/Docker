@@ -1,3 +1,5 @@
+# Dockerfile is a file which consists of some dependencies and required softwares for that application
+
 Dockerfile Syntax --
 
 FROM base image name
