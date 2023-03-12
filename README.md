@@ -18,6 +18,19 @@ Why we need docker --
   Docker will create containers which use the OS on the system means it will take that much of space that it requires.
   Then by creating images of that container we will share this to others so that this app can be running fine in other system.
   
+  Components of Docker --
+  
+      1. Docker deamon --
+            Docker deamon works of host operating system. It is responsible for running docker containers.
+            Docker deamon also communicates with other deamons.
+            
+      2. Docker client --
+            Docker users can intract with docker using docker client.Docker client uses commands to perform certain steps.
+            When we give some commands to client it sends these commands to deamon and deamon replies with answer.
+            
+      3. Docker Host --
+            Docker host is used to provide an environment to run application. It contains docker deamon, images, containers, networks, storage.
+  
   Steps to install docker --
   
     1. First create one linux server using AWS ec2.  (We will take ubuntu)
