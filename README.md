@@ -19,6 +19,7 @@ Why we need docker --
   Then by creating images of that container we will share this to others so that this app can be running fine in other system.
   
   Steps to install docker --
+  
     1. First create one linux server using AWS ec2.  (We will take ubuntu)
     
     2. Then connect to this server using git bash or putty
