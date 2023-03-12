@@ -20,7 +20,7 @@ For Container -
 16) docker container wait containerid --> Will wait till the container stops and gives 0 as status message
 17) docker container port containerid/container_Name (That comes by default check through 01 command)
 18) docker container export containerid > new_name.tar
-19) docker image import new_name.tar
+19) docker image import new_name.tar new_name    --> The image will be created by this name new_name
 20) docker container log containerid   --> Will give you all logs
 21) docker container stats  --> Gives you all info of all running containers.
 
