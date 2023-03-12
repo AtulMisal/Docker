@@ -18,6 +18,11 @@ Why we need docker --
   Docker will create containers which use the OS on the system means it will take that much of space that it requires.
   Then by creating images of that container we will share this to others so that this app can be running fine in other system.
   
+  Advantages of Docker --
+     1. Light in weight
+     2. Easy to use
+     3. Uses required storage.
+  
   Components of Docker --
   
       1. Docker deamon --
