@@ -26,6 +26,21 @@ For Container -
 
 ====================================================================================================================================================================
 
+Docker volume --
+  Whenever we create anything inside a container it will be stored as volume.
+     There are three types of volumes --
+         1. Bind Mount -- If you have to use some files from your host machine you can use this type of volume. Stored in hosts /var/lib/docker/volumes path.
+	 2. Volume -- It will be monitored by docker itself. By inspect command we will get some info on this.
+	 3. tmpf's --  Are stored in hosts memory and these are never written to host's filesystem.
+	 
+Commands --
+
+1. docker volume ls
+2. docker volume create abc
+3. docker container run -itd --name= My_Image -P -v volume_id:/var/lib/mysql Image_name      -- volume_id - This volume is already created by you and now will attach it to new container.
+
+====================================================================================================================================================================
+
 Docker Hub 
 
 1) docker pull image Name
