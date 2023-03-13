@@ -68,3 +68,9 @@ Q) Why we need Docker Networking --
 --- We use networking coz we have to connect multiple containers so that the desired o/p will comes
     Different networks are available in docker (docker network ls ) will show 4 network
     Default network is bridge
+
+  1. docker network ls 
+  2. docker network create driver_name network_name     -- driver_name see by 1 command 
+  
+How to attach network to a specific container --
+   docker container run -itd --name=my_cont -P --network=my_net image_name /bin/bash
