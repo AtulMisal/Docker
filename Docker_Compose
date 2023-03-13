@@ -1,0 +1,7 @@
+Q) What is docker compose?
+
+     Compose is a tool for defining and running multi-container Docker applications. With Compose, you use a YAML file to configure your application’s services. 
+Then, with a single command, you create and start all the services from your configuration.
+Let’s understand with a simple example, When you are working in the real-time industry there may be a requirement where you need to design an application 
+that has web-tier and data-base tier and if you want to design such application using docker, you need to create two or more container as per the requirement.
+  
