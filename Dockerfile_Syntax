@@ -11,7 +11,7 @@ ENV address=Pachegaon khurd
 WORKDIR /tmp  --> Will change the directory
 USER 		  --> will change user
 COPY		  --> will copy files
-ADD			  --> will copy files from net and local
+ADD			  --> will copy files from net and local also copy a zip file and extarct to containers folder
 CMD ["sh"]    --> At the end after excuction we will enter into python and on command line python interpretor will open
-EXPOSE        --> Will send traffic to this port
-ENTRYPOINT    --> Will give o/p when container of this image run
+EXPOSE        --> Will send traffic to this port ex.- 22 8000 8080
+ENTRYPOINT    --> Will give o/p when container of this image run [ "sh file" ]
