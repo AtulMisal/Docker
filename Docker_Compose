@@ -5,3 +5,47 @@ Then, with a single command, you create and start all the services from your con
 Let’s understand with a simple example, When you are working in the real-time industry there may be a requirement where you need to design an application 
 that has web-tier and data-base tier and if you want to design such application using docker, you need to create two or more container as per the requirement.
   
+
+Now we will create docker-compose file.
+==================================================================================================================================================================
+docker-compose.yml
+
+Version: 3
+Services: 
+     wbe_1:
+	    image: image_name_1
+		port: 
+		   - 8080:8080
+		   - 9000:9000
+		network:
+		   - network_1
+		volume:
+           - use bind mount type volume.
+        build: path where dockerfile is present
+          ssh:
+          labels:		
+		  tags:
+
+    wbe_2:
+	    image: image_name_2
+		port: 
+		   - 8080:8080
+		   - 9000:9000
+		depends_on:                      # Means this service will exicute after wbe_1 completed
+           - wbe_1                        		
+		network:
+		   - network_2
+		volume:
+           - use bind mount type volume.
+        build: path where dockerfile is present
+          ssh:
+          labels:		
+		  tags:		  
+		  
+	Networks:
+        - network_1
+		- network_2
+	
+    volumes:
+        - use bind mount type volume
+
